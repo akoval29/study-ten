@@ -27,8 +27,6 @@ class App extends React.Component {
         ten: this.state.ten -1
         })
     }
-    // Используйте только стрелочную форму методов
-    // Почему? Подробный ответ будет в следующем уроке
     
     resetStep = () => {
         this.setState({
