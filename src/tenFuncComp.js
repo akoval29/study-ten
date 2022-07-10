@@ -11,51 +11,19 @@ const TenFunc = (props) => {
     }
     
     function randomValue() {
-        return ten = Math.floor(Math.random() * 50);
+        setTenValue(ten1 => Math.floor(Math.random() * 50));
         
     }
 
     function resetValue() {
-        ten = 10;
+        setTenValue(ten1 => 10);
         
     }
     
-    // this.state = {
-    //         ten: 10,
-    //         textPlus: "INCR",
-    //         textMinus: "DECR",
-    //         textReset: "RESET",
-    //         textRandom: "RND"
-    //     }
-    // }
-    
-    // nextStep = () => {
-    //     this.setState({
-    //         ten: this.state.ten +1
-    //     })
-    // }
-    
-    // prefStep = () => {
-    //     this.setState({
-    //         ten: this.state.ten -1
-    //     })
-    // }
-    
-    // resetStep = () => {
-    //     this.setState({
-    //         ten: this.state.ten = 10
-    //     })
-    // }
-
-    // randomStep = () => {
-    //     this.setState({
-    //         ten: this.state.ten = Math.floor(Math.random() * 50)
-    //     })
-    // }
-
 
     return (
         <div className="app">
+            <div className='innerText'> Створений на функціональних компонентах</div>
             <div className="counter">{ten}</div>
                 <div className="controls">
                     <button onClick={() => changeTenValue(1)}>+1</button>

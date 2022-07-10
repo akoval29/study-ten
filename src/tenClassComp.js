@@ -41,6 +41,7 @@ class TenClass extends Component {
     render() {
         return (
             <div className="app">
+                <div className='innerText'> Створений на класових компонентах</div>
                 <div className="counter">{this.state.ten}</div>
                     <div className="controls">
                     <button onClick={this.nextStep}>{this.state.textPlus}</button>
