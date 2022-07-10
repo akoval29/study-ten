@@ -7,16 +7,16 @@ const TenFunc = (props) => {
     // const [ten2, setTenText] = useState();
     
     function changeTenValue(i) {
-        setTenValue(ten1 => ten1 + i);
+        setTenValue(ten => ten + i);
     }
     
     function randomValue() {
-        setTenValue(ten1 => Math.floor(Math.random() * 50));
+        setTenValue(ten => Math.floor(Math.random() * 50));
         
     }
 
     function resetValue() {
-        setTenValue(ten1 => 10);
+        setTenValue(ten => 10);
         
     }
     

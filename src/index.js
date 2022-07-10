@@ -1,25 +1,38 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import {Container, Row, Col} from "react-bootstrap";
 
 // import reportWebVitals from './reportWebVitals';
 
 import TenClass from './tenClassComp';
 import TenFunc from './tenFuncComp';
 
+const BootStrContainer = (props) => {
+    return (
+        <Container className="mt-5 mb-5">
+            {/* <h3 style={{display: 'flex',  justifyContent:'center', alignItems:'center', height: '10vh'}}>BootstrapTest1</h3> */}
+            <Row>
+                <Col>
+                    <TenClass/>
+                </Col>
+                <Col>
+                    <TenFunc/>
+                </Col>
+            </Row>
+        </Container>
+    )
+}
 
 ReactDOM.render(
     // <TenClass />, document.getElementById('app')
     <div>
-        <div>
+        {/* <div>
             <TenClass/>
         </div>
-
         <div>
             <TenFunc/> 
-        </div>
-        
-        
+        </div> */}
+        <BootStrContainer/>
     </div>, document.getElementById('app')
-
 );
