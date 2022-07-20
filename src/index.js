@@ -7,6 +7,7 @@ import {Container, Row, Col} from "react-bootstrap";
 
 import TenClass from './tenClassComp';
 import TenFunc from './tenFuncComp';
+import CustomHoocks from './tenCustomHoock';
 
 const BootStrContainer = (props) => {
     return (
@@ -18,6 +19,9 @@ const BootStrContainer = (props) => {
                 </Col>
                 <Col>
                     <TenFunc/>
+                </Col>
+                <Col>
+                    <CustomHoocks/>
                 </Col>
             </Row>
         </Container>
