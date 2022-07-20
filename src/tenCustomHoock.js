@@ -8,10 +8,10 @@ function useCounter(initial) {
   // которые приходят в компонент + аргумент initial поменяйте на 0 или null
 
   React.useEffect(() => {
-      fetch('https://www.random.org/integers/?num=1&min=-50&max=50&col=1&base=10&format=plain&rnd=new')
-          .then(res => res.text())
-          .then(res => setCounter(res))
-          .catch(err => console.log(err))
+    fetch ('https://www.random.org/integers/?num=1&min=-50&max=50&col=1&base=10&format=plain&rnd=new')
+      .then(res => res.text())
+      .then(res => setCounter(res))
+      .catch(err => console.log(err))
   }, [])
 
   const incCounter = () => {
@@ -64,7 +64,7 @@ const {counter, rndCounter, resetCounter} = useCounter(props.counter);
 
 return (
 <div className="app">
-<div className='innerText'> Fetch на random.org</div>
+<div className='innerText'> Fetch на random.org (не готово)</div>
   <div className="counter">{counter}</div>
   <div className="controls">
     <button onClick={rndCounter}>RND</button>
@@ -77,8 +77,8 @@ return (
 const CustomHoocks = () => {
 return (
   <>
-      <Counter counter={0}/>
-      <RndCounter counter={5}/>
+    <Counter counter={0}/>
+    <RndCounter counter={5}/>
   </>
 )
 }
